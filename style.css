@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Scroll Suave no site */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variáveis CSS cores padrão*/
+:root {
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --black: #0f172a;
+    --blacker: #0a0f1c;
+    --light: #e2e8f0;
+    --glass: rgba(255, 255, 255, 0.1);
+    --glass-nav: rgba(15, 23, 42, 0.8);
+    --glass-img: rgba(79, 70, 229, 0.3);
+    --glass-sobre-content: rgba(255, 255, 255, 0.05);
+    --glass-projetos-paragrafo: rgba(226, 232, 240, 0.8);
+}
+
+/* Estilos de cores gerais do site*/
+body {
+    background-color: var(--black);
+    color: var(--light);
+}
+
+/* Estilos da seção da barra de navegação- nav */
+.navegacao {
+    position: fixed;
+    background: var(--glass-nav);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    animation: slideDown .8s ease;
+}
+
+/* Animação da barra de navegação- nav */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos da barra de navegação- menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+/* Estilos dos links da barra de navegação- menu */
+.menu-link {
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 700;
+    position: relative;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+/* Estilos dos links da barra de navegação- menu - animação ao passar o mouse */
+.menu-link:hover {
+    background: rgba(79, 70, 229, .15);
+    color: var(--primary);
+}
+
+/* Estilos dos links da barra de navegação- menu - animação abaixo do link */
+.menu-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.4s ease;
+}
+
+/* Estilos dos links da barra de navegação- menu - animação abaixo do link ao passar o mouse */
+.menu-link:hover::after {
+    width: 100%;
+}
+
+/* Estilos dos links da barra de navegação- menu - animação abaixo do link ativo */
+.menu-link.active {
+    color: var(--primary);
+}
+
+/* Estilos dos links da barra de navegação- menu - animação abaixo do link ativo ao passar o mouse */
+.menu-link.active::after {
+    width: 100%;
+}
+
+/* Estilos da seção home-main */
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 140px;
+}
+
+/* Estilos da imagem da seção home-main */
+.home-img {
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px var(--glass-img);
+    border-radius: 50%;
+    border: 4px solid var(--glass);
+    animation: flutuar 10s ease-in-out infinite;
+}
+
+/* Estilos das redes sociais da seção home-main */
+.social-links{
+    display:flex;
+    gap:1rem;
+}
+
+/* Estilos dos links das redes sociais da seção home-main */
+.social-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+/* Estilos dos links das redes sociais da seção home-main - animação ao passar o mouse */
+.social-links a:hover{
+    color:var(--primary);
+}
+
+/* Estilos do h1 da seção home-main */
+.home h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 20px;
+    text-shadow: 0 0 15px rgba(79, 70, 229, .5);
+}
+
+/* Estilos do p da seção home-main */
+.home-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light);
+}
+
+.btn-cv {
+    text-decoration: none;
+    color: white;
+    background:
+        linear-gradient(45deg,
+            var(--primary),
+            var(--secondary));
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+/* Estilos do botão da seção home-main - animação ao passar o mouse */
+.btn-cv:hover {
+    transform: translateY(-5px);
+    box-shadow:0 0 20px rgba(79, 70, 229, .5);
+}
+
+/* Estilos do h2 da seção sobre-main */
+.sobre-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light);
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+/* Estilos da div da seção sobre-text */
+.sobre-content {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--glass);
+    backdrop-filter: blur(10px);
+    background: var(--glass-sobre-content);
+}
+
+/* Estilos do p da seção sobre-main */
+.sobre-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light);
+    text-align: center;
+}
+
+/* Estilos da div da seção skills-main */
+.skills-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilos da div da seção skills-main */
+.skill-card {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    background: var(--glass-sobre-content);
+    border: 1px solid var(--glass);
+    transition: .3s ease;
+}
+
+/* Estilos da div da seção skills-main - animação ao passar o mouse */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 15px rgba(79, 70, 229, .4);
+}
+
+/* Estilos da seção projetos-main, seção sobre-main e para seção contatos-main */
+.conteiner {
+    padding: 6rem 2rem;
+}
+
+/* Estilos do h2 da seção projetos-main */
+.projetos-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light);
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+/* Estilos da div mãe da seção projetos-main */
+.projetos-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos da div filha da seção projetos-main */
+.projetos-card {
+    background: var(--glass-sobre-content);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass);
+    overflow: hidden;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+/* Estilos da div filha da seção projetos-main - animação ao passar o mouse */
+.projetos-card:hover .projetos-img {
+    box-shadow: 0 10px 20px var(--glass-img);
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* Estilos da imagem da seção projetos-main */
+.projetos-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+/* Estilos da div da seção projetos-main-h3 / p */
+.card-info {
+    padding: 1.5rem;
+}
+
+/* Estilos do h3 da seção projetos-main */
+.info-projetos {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light);
+    margin: 5px;
+}
+
+/* Estilos do p da seção projetos-main */
+.paragrafo-projetos {
+    color: var(--glass-projetos-paragrafo);
+    line-height: 1.25;
+}
+
+/* Estilos da div da seção projetos-main */
+.card-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Estilos do botão da seção projetos-main */
+.btn-card {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg,
+            var(--primary),
+            var(--secondary));
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+/* Estilos do botão da seção projetos-main - animação ao passar o mouse */
+.btn-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Estilos da seção contatos-main */
+.contatos-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light);
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+/* Estilos da div da seção contatos-main */
+.contatos-form {
+    max-width: 900px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    background: var(--glass-sobre-content);
+    padding: 2rem;
+    border: 1px solid var(--glass);
+    border-radius: 16px;
+}
+
+/* Estilos do form da seção contatos-main */
+.text-form {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos do input da seção contatos-main */
+.contatos-text {
+    width: 100%;
+    padding: 1rem;
+    background: var(--glass-sobre-content);
+    border-radius: 8px;
+    color: var(--light);
+    font-size: 1.5rem;
+    border: 1px solid var(--glass);
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilos do input da seção contatos-main - animação ao passar o mouse */
+.contatos-text:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 10px var(--glass-img);
+}
+
+/* Estilos do textarea da seção contatos-main */
+.contact-button {
+    color: var(--light);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.6s ease;
+}
+
+/* Estilos do botão da seção contatos-main - animação ao passar o mouse */
+.contact-button:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px var(--glass-img);
+}
+
+/* Estilos da div da seção home-main */
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background:
+        radial-gradient(circle at 10% 20%, var(--primary) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secondary) 0%, transparent 20%),
+        var(--blacker);
+}
+
+/* Acessibilidade: esconde visualmente mas mantém para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Placeholder para cards "Em breve" */
+.placeholder-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: var(--glass-sobre-content);
+    color: var(--glass-projetos-paragrafo);
+    font-size: 1.2rem;
+    gap: 0.5rem;
+}
+
+.placeholder-img i {
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+/* Estilos da animação da imagem da seção home-main */
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0%);
+    }
+
+    40% {
+        transform: translateY(-10%);
+    }
+
+    15% {
+        transform: rotate(3deg) translateX(10%)
+    }
+
+    25% {
+        transform: rotate(3deg) translateX(-10%)
+    }
+
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .home h1 {
+        font-size: 2.8rem;
+    }
+
+    .home-text {
+        font-size: 1.2rem;
+    }
+
+    .sobre-title,
+    .projetos-title,
+    .contatos-title {
+        font-size: 2.5rem;
+    }
+
+    .sobre-text {
+        font-size: 1.2rem;
+    }
+
+    .projetos-content {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* Celulares (até 767px) */
+@media (max-width: 767px) {
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .menu {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .menu-link {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .home {
+        padding-top: 120px;
+        gap: 1.5rem;
+    }
+
+    .home-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    .home-text {
+        font-size: 1rem;
+    }
+
+    .btn-cv {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .conteiner {
+        padding: 4rem 1.2rem;
+    }
+
+    .sobre-title,
+    .projetos-title,
+    .contatos-title {
+        font-size: 1.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .sobre-content {
+        padding: 1.2rem;
+    }
+
+    .sobre-text {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skill-card {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .projetos-content {
+        grid-template-columns: 1fr;
+    }
+
+    .info-projetos {
+        font-size: 1.2rem;
+    }
+
+    .contatos-form {
+        padding: 1.2rem;
+    }
+
+    .contatos-text {
+        font-size: 1rem;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Toggle tema claro/escuro */
+.theme-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--glass);
+    border: 1px solid var(--glass);
+    color: var(--light);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    z-index: 101;
+    backdrop-filter: blur(12px);
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--glass);
+    color: var(--glass-projetos-paragrafo);
+    font-size: 0.9rem;
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #25D366;
+    color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    transition: .3s ease;
+    z-index: 99;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    background: var(--primary);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all .3s ease;
+    z-index: 99;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+}
+
+/* Animação de scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ícones nas skills */
+.skill-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--primary);
+}
+
+/* Tema claro */
+body.light {
+    --black: #f8fafc;
+    --blacker: #f1f5f9;
+    --light: #0f172a;
+    --glass: rgba(15, 23, 42, 0.08);
+    --glass-nav: rgba(248, 250, 252, 0.9);
+    --glass-img: rgba(79, 70, 229, 0.2);
+    --glass-sobre-content: rgba(15, 23, 42, 0.05);
+    --glass-projetos-paragrafo: rgba(15, 23, 42, 0.7);
+}
+
+body.light .skill-card i {
+    color: var(--secondary);
+}
+
+body.light .btn-card,
+body.light .btn-cv,
+body.light .contact-button {
+    color: white;
+}
+
+/* Ajuste mobile para os botões flutuantes */
+@media (max-width: 767px) {
+    .theme-toggle {
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .whatsapp-float {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+
+    .back-to-top {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+

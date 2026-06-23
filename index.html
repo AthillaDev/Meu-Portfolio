@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack em formação. Projetos em HTML, CSS, JavaScript, Node.js e MongoDB.">
+    <meta property="og:title" content="Athilla Cruz | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack em formação. Projetos em HTML, CSS, JavaScript, Node.js e MongoDB.">
+    <meta property="og:image" content="https://athilladev.github.io/meu-portfolio/img/Foto-Profissicional.png">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="./style.css">
+    <title>Athilla Cruz | Desenvolvedor Full Stack</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+
+        <ul class="menu">
+            <li>
+                <a href="#home" class="menu-link"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#tecnologias" class="menu-link">Tecnologias</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+        <button class="theme-toggle" aria-label="Alternar tema claro/escuro">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </nav>
+
+    <main id="home" class="home reveal">
+
+        <picture>
+            <source srcset="./img/Foto-Profissicional.webp" type="image/webp">
+            <img src="./img/Foto-Profissicional.png" alt="Foto profissional de Athilla Cruz" class="home-img" />
+        </picture>
+        
+        <div class="social-links">
+            <a href="https://github.com/AthillaDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Athilla Cruz">GitHub</a>
+            <a href="https://www.linkedin.com/in/athillacruz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Athilla Cruz">LinkedIn</a>
+        </div>
+        
+        <h1>Athilla Cruz</h1>
+        <p class="home-text">Desenvolvedor Full Stack em evolução constante, construindo soluções reais através da
+            tecnologia.</p>
+        <p class="home-text">Transformando aprendizado em projetos, projetos em experiência e experiência em
+            oportunidades.</p>
+
+        <a href="./Curriculo-Athilla.pdf" download class="btn-cv" aria-label="Baixar currículo">
+            Baixar Currículo
+        </a>
+
+    </main>
+
+    <section id="sobre" class="conteiner reveal">
+
+        <h2 class="sobre-title">Sobre Mim</h2>
+        <div class="sobre-content">
+            <p class="sobre-text">Desenvolvedor Full-Stack em formação, focado na construção de aplicações modernas,
+                responsivas e escaláveis. Desenvolvo projetos próprios para aplicar conhecimentos em Front-End e
+                Back-End, transformando teoria em experiência prática. Utilizo tecnologias como HTML, CSS,
+                JavaScript, Node.js e bancos de dados, sempre buscando aprimorar minhas habilidades técnicas e criar
+                soluções eficientes que proporcionem uma excelente experiência ao usuário.</p>
+        </div>
+
+    </section>
+
+    <section id="tecnologias"  class="conteiner reveal">
+
+        <h2 class="sobre-title">Tecnologias</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i> MongoDB</div>
+
+        </div>
+
+    </section>
+
+    <section id="projetos" class="conteiner reveal">
+
+        <h2 class="projetos-title">Meus Projetos</h2>
+
+        <div class="projetos-content">
+
+            <div class="projetos-card reveal">
+                <picture>
+                    <source srcset="./img/Screen-mario&Luigi.webp" type="image/webp">
+                    <img src="./img/Screen-mario&Luigi.png" alt="Projeto Mario&Luigi" class="projetos-img" loading="lazy" />
+                </picture>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Mario & Luigi</h3>
+                    <p class="paragrafo-projetos"> Projeto inspirado no universo Mario & Luigi, desenvolvido com HTML,
+                        CSS e JavaScript. O foco foi criar uma interface moderna, responsiva e interativa, aplicando
+                        boas práticas de desenvolvimento Front-End e experiência do usuário.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="https://github.com/AthillaDev/projeto-mario-luigi" target="_blank"
+                        class="btn-card">GitHub</a>
+                    <a href="https://projeto-mario-luigi.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card reveal">
+                <img src="./img/Gif-Refri-Dev.gif" alt="Projeto Refri do Dev" class="projetos-img" loading="lazy" />
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Refri do Dev</h3>
+                    <p class="paragrafo-projetos">Slider interativo desenvolvido com HTML, CSS e JavaScript, inspirado
+                        em campanhas publicitárias de bebidas. O projeto conta com animações personalizadas, navegação
+                        por teclado, indicadores visuais e layout responsivo para diferentes dispositivos.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="https://github.com/AthillaDev/Projeto-Refri-Dev" target="_blank"
+                        class="btn-card">GitHub</a>
+                    <a href="https://projeto-refri-dev.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card reveal">
+                <picture>
+                    <source srcset="./img/Screen-Burger-Forge.webp" type="image/webp">
+                    <img src="./img/Screen-Burger-Forge.png" alt="Projeto Burger Forge" class="projetos-img" loading="lazy" />
+                </picture>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Burger Forge</h3>
+                    <p class="paragrafo-projetos">Sistema interativo de cardápio desenvolvido com HTML, CSS e
+                        JavaScript, focado na manipulação de dados e atualização dinâmica da interface. O projeto
+                        utiliza métodos modernos de arrays, layout responsivo e componentes visuais inspirados em
+                        aplicações reais.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="https://github.com/AthillaDev/Projeto-Page-Hamburgueria" target="_blank"
+                        class="btn-card">GitHub</a>
+                    <a href="https://projeto-page-hamburgueria.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card reveal">
+                <picture>
+                    <source srcset="./img/Screen-ConversorMoedas.webp" type="image/webp">
+                    <img src="./img/Screen-ConversorMoedas.png" alt="Projeto Conversor de Moedas" class="projetos-img" loading="lazy" />
+                </picture>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Conversor de Moedas</h3>
+                    <p class="paragrafo-projetos">Projeto desenvolvido para simular um conversor de moedas, aplicando
+                        conceitos de JavaScript, manipulação do DOM e atualização dinâmica de dados. A interface foi
+                        projetada para oferecer uma experiência simples, moderna e responsiva em diferentes
+                        dispositivos.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="https://github.com/AthillaDev/projeto-currency-converter" target="_blank"
+                        class="btn-card">GitHub</a>
+                    <a href="https://projeto-currency-converter.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card em-breve reveal">
+                <div class="projetos-img placeholder-img">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Em breve</span>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Proximo Projeto</h3>
+                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js e banco de dados...</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="#" target="_blank" class="btn-card">GitHub</a>
+                    <a href="#" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card em-breve reveal">
+                <div class="projetos-img placeholder-img">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Em breve</span>
+                </div>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Proximo Projeto</h3>
+                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js e banco de dados...</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="#" target="_blank" class="btn-card">GitHub</a>
+                    <a href="#" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contatos" class="conteiner reveal">
+
+        <h2 class="contatos-title">Entre em Contato</h2>
+        <form class="contatos-form" id="form" onsubmit="enviarWhattsApp(event)">
+
+            <div class="text-form">
+                <label for="name" class="sr-only">Nome</label>
+                <input class="contatos-text" placeholder="nome" id="name" required>
+            </div>
+            <div class="text-form">
+                <label for="message" class="sr-only">Mensagem</label>
+                <textarea class="contatos-text" placeholder="digite sua mensagem" rows="5" id="message" required></textarea>
+            </div>
+
+            <button class="contact-button" type="submit">Enviar via WhatsApp</button>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Athilla Cruz. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/5521970431587" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale comigo pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
