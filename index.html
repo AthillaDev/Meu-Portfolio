@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack em formação. Projetos em HTML, CSS, JavaScript, Node.js e MongoDB.">
+    <meta name="description"
+        content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack. Especializado em Javascript,React, Next.js, TypeScript, Node.js e Prisma.">
     <meta property="og:title" content="Athilla Cruz | Desenvolvedor Full Stack">
-    <meta property="og:description" content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack em formação. Projetos em HTML, CSS, JavaScript, Node.js e MongoDB.">
+    <meta property="og:description"
+        content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack. Especializado em Javascript, React, Next.js, TypeScript, Node.js e Prisma.">
     <meta property="og:image" content="https://athilladev.github.io/meu-portfolio/img/Foto-Profissicional.png">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="./img/favicon.svg">
     <link rel="stylesheet" href="./style.css">
@@ -35,6 +39,9 @@
                 <a href="#tecnologias" class="menu-link">Tecnologias</a>
             </li>
             <li>
+                <a href="#formacao" class="menu-link">Formação</a>
+            </li>
+            <li>
                 <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
@@ -53,19 +60,21 @@
             <source srcset="./img/Foto-Profissicional.webp" type="image/webp">
             <img src="./img/Foto-Profissicional.png" alt="Foto profissional de Athilla Cruz" class="home-img" />
         </picture>
-        
+
         <div class="social-links">
-            <a href="https://github.com/AthillaDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Athilla Cruz">GitHub</a>
-            <a href="https://www.linkedin.com/in/athillacruz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Athilla Cruz">LinkedIn</a>
+            <a href="https://github.com/AthillaDev" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub de Athilla Cruz">GitHub</a>
+            <a href="https://www.linkedin.com/in/athillacruz" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn de Athilla Cruz">LinkedIn</a>
         </div>
-        
-        <h1>Athilla Cruz</h1>
+
+        <h1 class="typing-text">Athilla Cruz</h1>
         <p class="home-text">Desenvolvedor Full Stack em evolução constante, construindo soluções reais através da
             tecnologia.</p>
         <p class="home-text">Transformando aprendizado em projetos, projetos em experiência e experiência em
             oportunidades.</p>
 
-        <a href="./Curriculo-Athilla.pdf" download class="btn-cv" aria-label="Baixar currículo">
+        <a href="./Curriculo-Athilla.pdf" download class="btn-cv" aria-label="Baixar currículo de Athilla Cruz em PDF">
             Baixar Currículo
         </a>
 
@@ -75,28 +84,95 @@
 
         <h2 class="sobre-title">Sobre Mim</h2>
         <div class="sobre-content">
-            <p class="sobre-text">Desenvolvedor Full-Stack em formação, focado na construção de aplicações modernas,
-                responsivas e escaláveis. Desenvolvo projetos próprios para aplicar conhecimentos em Front-End e
-                Back-End, transformando teoria em experiência prática. Utilizo tecnologias como HTML, CSS,
-                JavaScript, Node.js e bancos de dados, sempre buscando aprimorar minhas habilidades técnicas e criar
-                soluções eficientes que proporcionem uma excelente experiência ao usuário.</p>
+            <p class="sobre-text">
+                Sou desenvolvedor Full Stack em constante evolução, focado em criar aplicações modernas,
+                performáticas e com excelente experiência de usuário.
+            </p>
+            <p class="sobre-text">
+                Trabalho principalmente com <strong>React, Next.js, TypeScript e Tailwind CSS</strong> no front-end,
+                e <strong>Node.js + Prisma</strong> no back-end. Gosto de transformar ideias em soluções reais,
+                priorizando código limpo, responsividade e boas práticas de desenvolvimento.
+            </p>
+            <p class="sobre-text">
+                Atualmente estou desenvolvendo projetos próprios para consolidar meus conhecimentos e
+                buscando minha primeira oportunidade profissional como desenvolvedor Full Stack.
+            </p>
         </div>
 
     </section>
 
-    <section id="tecnologias"  class="conteiner reveal">
+    <section id="tecnologias" class="conteiner reveal">
 
         <h2 class="sobre-title">Tecnologias</h2>
 
-        <div class="skills-grid">
+        <!-- Front-end -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Front-end</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill-card"><i class="fa-solid fa-server"></i> Next.js</div>
+                <div class="skill-card"><i class="fa-solid fa-file-code"></i> TypeScript</div>
+                <div class="skill-card"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+            </div>
+        </div>
 
-            <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
-            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-            <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
-            <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
-            <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
-            <div class="skill-card"><i class="fa-brands fa-github"></i> GitHub</div>
-            <div class="skill-card"><i class="fa-solid fa-database"></i> MongoDB</div>
+        <!-- Back-end -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Back-end</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                <div class="skill-card"><i class="fa-solid fa-database"></i> Prisma</div>
+                <div class="skill-card"><i class="fa-solid fa-database"></i> MongoDB</div>
+            </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="skills-category">
+            <h3 class="skills-category-title">Ferramentas</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
+                <div class="skill-card"><i class="fa-brands fa-github"></i> GitHub</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="formacao" class="conteiner reveal">
+
+        <h2 class="sobre-title">Formação & Cursos</h2>
+
+        <div class="formacao-grid">
+
+            <div class="formacao-card">
+                <span class="formacao-ano">2024 — Atual</span>
+                <h3>Desenvolvimento Full Stack</h3>
+                <p class="formacao-instituicao">Rocketseat / Alura / Curso em andamento</p>
+                <p class="formacao-desc">
+                    Formação focada em React, Next.js, TypeScript, Node.js e Prisma.
+                    Desenvolvimento de aplicações completas com front-end e back-end.
+                </p>
+            </div>
+
+            <div class="formacao-card">
+                <span class="formacao-ano">2023 — 2024</span>
+                <h3>JavaScript & TypeScript</h3>
+                <p class="formacao-instituicao">Plataforma / Curso</p>
+                <p class="formacao-desc">
+                    Aprofundamento em JavaScript moderno, TypeScript, manipulação de DOM e boas práticas.
+                </p>
+            </div>
+
+            <div class="formacao-card">
+                <span class="formacao-ano">2023</span>
+                <h3>HTML, CSS e Responsividade</h3>
+                <p class="formacao-instituicao">Plataforma / Curso</p>
+                <p class="formacao-desc">
+                    Fundamentos de front-end, layouts responsivos, Flexbox, Grid e animações.
+                </p>
+            </div>
 
         </div>
 
@@ -111,7 +187,8 @@
             <div class="projetos-card reveal">
                 <picture>
                     <source srcset="./img/Screen-mario&Luigi.webp" type="image/webp">
-                    <img src="./img/Screen-mario&Luigi.png" alt="Projeto Mario&Luigi" class="projetos-img" loading="lazy" />
+                    <img src="./img/Screen-mario&Luigi.png" alt="Projeto Mario&Luigi" class="projetos-img"
+                        loading="lazy" />
                 </picture>
 
                 <div class="card-info">
@@ -150,7 +227,8 @@
             <div class="projetos-card reveal">
                 <picture>
                     <source srcset="./img/Screen-Burger-Forge.webp" type="image/webp">
-                    <img src="./img/Screen-Burger-Forge.png" alt="Projeto Burger Forge" class="projetos-img" loading="lazy" />
+                    <img src="./img/Screen-Burger-Forge.png" alt="Projeto Burger Forge" class="projetos-img"
+                        loading="lazy" />
                 </picture>
 
                 <div class="card-info">
@@ -172,7 +250,8 @@
             <div class="projetos-card reveal">
                 <picture>
                     <source srcset="./img/Screen-ConversorMoedas.webp" type="image/webp">
-                    <img src="./img/Screen-ConversorMoedas.png" alt="Projeto Conversor de Moedas" class="projetos-img" loading="lazy" />
+                    <img src="./img/Screen-ConversorMoedas.png" alt="Projeto Conversor de Moedas" class="projetos-img"
+                        loading="lazy" />
                 </picture>
 
                 <div class="card-info">
@@ -199,7 +278,8 @@
 
                 <div class="card-info">
                     <h3 class="info-projetos">Proximo Projeto</h3>
-                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js e banco de dados...</p>
+                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js
+                        e banco de dados...</p>
                 </div>
 
                 <div class="card-buttons">
@@ -217,7 +297,8 @@
 
                 <div class="card-info">
                     <h3 class="info-projetos">Proximo Projeto</h3>
-                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js e banco de dados...</p>
+                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js
+                        e banco de dados...</p>
                 </div>
 
                 <div class="card-buttons">
@@ -241,7 +322,8 @@
             </div>
             <div class="text-form">
                 <label for="message" class="sr-only">Mensagem</label>
-                <textarea class="contatos-text" placeholder="digite sua mensagem" rows="5" id="message" required></textarea>
+                <textarea class="contatos-text" placeholder="digite sua mensagem" rows="5" id="message"
+                    required></textarea>
             </div>
 
             <button class="contact-button" type="submit">Enviar via WhatsApp</button>
@@ -254,7 +336,8 @@
         <p>&copy; <span id="year"></span> Athilla Cruz. Todos os direitos reservados.</p>
     </footer>
 
-    <a href="https://wa.me/5521970431587" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale comigo pelo WhatsApp">
+    <a href="https://wa.me/5521970431587" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Fale comigo pelo WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
