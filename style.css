@@ -12,22 +12,33 @@ html {
 
 /* Variáveis CSS cores padrão*/
 :root {
-    --primary: #4f46e5;
-    --secondary: #7c3aed;
-    --black: #0f172a;
-    --blacker: #0a0f1c;
-    --light: #e2e8f0;
-    --glass: rgba(255, 255, 255, 0.1);
-    --glass-nav: rgba(15, 23, 42, 0.8);
-    --glass-img: rgba(79, 70, 229, 0.3);
-    --glass-sobre-content: rgba(255, 255, 255, 0.05);
-    --glass-projetos-paragrafo: rgba(226, 232, 240, 0.8);
+    --primary: #10b981;              /* Verde principal (emerald) */
+    --secondary: #059669;            /* Verde mais escuro */
+    --black: #111827;                /* Cinza bem escuro */
+    --blacker: #0b1220;              /* Quase preto */
+    --light: #f3f4f6;                /* Texto claro */
+    --glass: rgba(255, 255, 255, 0.07);
+    --glass-nav: rgba(17, 24, 39, 0.88);
+    --glass-img: rgba(16, 185, 129, 0.22);
+    --glass-sobre-content: rgba(255, 255, 255, 0.04);
+    --glass-projetos-paragrafo: rgba(209, 213, 219, 0.85);
 }
 
 /* Estilos de cores gerais do site*/
 body {
     background-color: var(--black);
     color: var(--light);
+}
+
+body.light {
+    --black: #f9fafb;
+    --blacker: #f3f4f6;
+    --light: #111827;
+    --glass: rgba(17, 24, 39, 0.07);
+    --glass-nav: rgba(249, 250, 251, 0.92);
+    --glass-img: rgba(16, 185, 129, 0.15);
+    --glass-sobre-content: rgba(17, 24, 39, 0.04);
+    --glass-projetos-paragrafo: rgba(55, 65, 81, 0.8);
 }
 
 /* Estilos da seção da barra de navegação- nav */
