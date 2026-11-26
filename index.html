@@ -9,20 +9,35 @@
     <meta property="og:title" content="Athilla Cruz | Desenvolvedor Full Stack">
     <meta property="og:description"
         content="Portfólio de Athilla Cruz, Desenvolvedor Full Stack. Especializado em Javascript, React, Next.js, TypeScript, Node.js e Prisma.">
-    <meta property="og:image" content="https://athilladev.github.io/meu-portfolio/img/Foto-Profissicional.png">
+    <meta property="og:url" content="https://meu-portfolio-omega-seven.vercel.app/">
+    <meta property="og:image" content="https://meu-portfolio-omega-seven.vercel.app/img/Foto-Profissicional.png">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="./img/favicon.svg">
     <link rel="stylesheet" href="./style.css">
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
     <title>Athilla Cruz | Desenvolvedor Full Stack</title>
 </head>
 
 <body>
+
+    <script>
+        // Aplica o tema salvo antes da primeira pintura, evitando o flash do tema escuro
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light");
+        }
+    </script>
 
     <div class="particulas"></div>
 
@@ -30,7 +45,7 @@
 
         <ul class="menu">
             <li>
-                <a href="#home" class="menu-link"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#home" class="menu-link"><svg class="ico" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>Home</a>
             </li>
             <li>
                 <a href="#sobre" class="menu-link">Sobre</a>
@@ -49,7 +64,7 @@
             </li>
         </ul>
         <button class="theme-toggle" aria-label="Alternar tema claro/escuro">
-            <i class="fa-solid fa-moon"></i>
+            <svg class="ico icon-moon" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg><svg class="ico icon-sun" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
         </button>
 
     </nav>
@@ -58,7 +73,7 @@
 
         <picture>
             <source srcset="./img/Foto-Profissicional.webp" type="image/webp">
-            <img src="./img/Foto-Profissicional.png" alt="Foto profissional de Athilla Cruz" class="home-img" />
+            <img src="./img/Foto-Profissicional.png" alt="Foto profissional de Athilla Cruz" class="home-img" width="1254" height="1254" fetchpriority="high" />
         </picture>
 
         <div class="social-links">
@@ -109,13 +124,13 @@
         <div class="skills-category">
             <h3 class="skills-category-title">Front-end</h3>
             <div class="skills-grid">
-                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML5</div>
-                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
-                <div class="skill-card"><i class="fa-brands fa-react"></i> React</div>
-                <div class="skill-card"><i class="fa-solid fa-server"></i> Next.js</div>
-                <div class="skill-card"><i class="fa-solid fa-file-code"></i> TypeScript</div>
-                <div class="skill-card"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg> HTML5</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg> CSS3</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg> JavaScript</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg> React</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg> Next.js</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg> TypeScript</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg> Tailwind CSS</div>
             </div>
         </div>
 
@@ -123,9 +138,9 @@
         <div class="skills-category">
             <h3 class="skills-category-title">Back-end</h3>
             <div class="skills-grid">
-                <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
-                <div class="skill-card"><i class="fa-solid fa-database"></i> Prisma</div>
-                <div class="skill-card"><i class="fa-solid fa-database"></i> MongoDB</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg> Node.js</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.8068 18.2848L13.5528.7565c-.207-.4382-.639-.7273-1.1286-.7541-.5023-.0293-.9523.213-1.2062.6253L2.266 15.1271c-.2773.4518-.2718 1.0091.0158 1.4555l4.3759 6.7786c.2608.4046.7127.6388 1.1823.6388.1332 0 .267-.0188.3987-.0577l12.7019-3.7568c.3891-.1151.7072-.3904.8737-.7553s.1633-.7828-.0075-1.1454zm-1.8481.7519L9.1814 22.2242c-.3292.0975-.6448-.1873-.5756-.5194l3.8501-18.4386c.072-.3448.5486-.3996.699-.0803l7.1288 15.138c.1344.2856-.019.6224-.325.7128z"/></svg> Prisma</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg> MongoDB</div>
             </div>
         </div>
 
@@ -133,8 +148,8 @@
         <div class="skills-category">
             <h3 class="skills-category-title">Ferramentas</h3>
             <div class="skills-grid">
-                <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
-                <div class="skill-card"><i class="fa-brands fa-github"></i> GitHub</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg> Git</div>
+                <div class="skill-card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub</div>
             </div>
         </div>
 
@@ -185,9 +200,30 @@
         <div class="projetos-content">
 
             <div class="projetos-card reveal">
+                <video class="projetos-img" width="960" height="540" autoplay muted loop playsinline preload="metadata"
+                    aria-label="Demonstração da landing page de MBA em IA Aplicada">
+                    <source src="./img/cerne-mba-web.mp4" type="video/mp4">
+                </video>
+
+                <div class="card-info">
+                    <h3 class="info-projetos">Landing Page para MBA (Template)</h3>
+                    <p class="paragrafo-projetos">Template de landing page para um MBA em IA Aplicada, criado do zero
+                        com Next.js, React, TypeScript, Tailwind CSS e Framer Motion. Inclui formulário de candidatura
+                        com envio por webhook, testes com Vitest e CI no GitHub. Todo o conteúdo é fictício.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <a href="https://github.com/AthillaDev/Projeto-page-institucional" target="_blank"
+                        class="btn-card">GitHub</a>
+                    <a href="https://projeto-page-institucional.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                </div>
+
+            </div>
+
+            <div class="projetos-card reveal">
                 <picture>
                     <source srcset="./img/Screen-mario&Luigi.webp" type="image/webp">
-                    <img src="./img/Screen-mario&Luigi.png" alt="Projeto Mario&Luigi" class="projetos-img"
+                    <img src="./img/Screen-mario&Luigi.png" alt="Projeto Mario&Luigi" class="projetos-img" width="1920" height="1078"
                         loading="lazy" />
                 </picture>
 
@@ -207,7 +243,10 @@
             </div>
 
             <div class="projetos-card reveal">
-                <img src="./img/Gif-Refri-Dev.gif" alt="Projeto Refri do Dev" class="projetos-img" loading="lazy" />
+                <video class="projetos-img" width="1152" height="648" autoplay muted loop playsinline preload="metadata"
+                    aria-label="Projeto Refri do Dev">
+                    <source src="./img/Refri-Dev.mp4" type="video/mp4">
+                </video>
 
                 <div class="card-info">
                     <h3 class="info-projetos">Refri do Dev</h3>
@@ -227,7 +266,7 @@
             <div class="projetos-card reveal">
                 <picture>
                     <source srcset="./img/Screen-Burger-Forge.webp" type="image/webp">
-                    <img src="./img/Screen-Burger-Forge.png" alt="Projeto Burger Forge" class="projetos-img"
+                    <img src="./img/Screen-Burger-Forge.png" alt="Projeto Burger Forge" class="projetos-img" width="1080" height="1080"
                         loading="lazy" />
                 </picture>
 
@@ -248,62 +287,40 @@
             </div>
 
             <div class="projetos-card reveal">
-                <picture>
-                    <source srcset="./img/Screen-ConversorMoedas.webp" type="image/webp">
-                    <img src="./img/Screen-ConversorMoedas.png" alt="Projeto Conversor de Moedas" class="projetos-img"
-                        loading="lazy" />
-                </picture>
+                <video class="projetos-img" width="960" height="540" autoplay muted loop playsinline preload="metadata"
+                    aria-label="Demonstração do cadastro de usuários no front-end">
+                    <source src="./img/cadastro-usuarios-web.mp4" type="video/mp4">
+                </video>
 
                 <div class="card-info">
-                    <h3 class="info-projetos">Conversor de Moedas</h3>
-                    <p class="paragrafo-projetos">Projeto desenvolvido para simular um conversor de moedas, aplicando
-                        conceitos de JavaScript, manipulação do DOM e atualização dinâmica de dados. A interface foi
-                        projetada para oferecer uma experiência simples, moderna e responsiva em diferentes
-                        dispositivos.</p>
+                    <h3 class="info-projetos">Cadastro de Usuários (Front-end)</h3>
+                    <p class="paragrafo-projetos">Interface em React para cadastrar, listar, editar e excluir usuários,
+                        com validação nos campos, janela de edição e confirmação antes de excluir. Consome a API REST
+                        do back-end.</p>
                 </div>
 
                 <div class="card-buttons">
-                    <a href="https://github.com/AthillaDev/projeto-currency-converter" target="_blank"
+                    <a href="https://github.com/AthillaDev/Cadastro-de-Usuarios" target="_blank"
                         class="btn-card">GitHub</a>
-                    <a href="https://projeto-currency-converter.vercel.app/" target="_blank" class="btn-card">Demo</a>
+                    <a href="https://cadastro-de-usuarios-fawn.vercel.app/" target="_blank" class="btn-card">Demo</a>
                 </div>
 
             </div>
 
-            <div class="projetos-card em-breve reveal">
-                <div class="projetos-img placeholder-img">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Em breve</span>
-                </div>
+            <div class="projetos-card reveal">
+                <video class="projetos-img" width="960" height="540" autoplay muted loop playsinline preload="metadata"
+                    aria-label="Demonstração da API e do banco de dados do cadastro de usuários">
+                    <source src="./img/backend-banco-web.mp4" type="video/mp4">
+                </video>
 
                 <div class="card-info">
-                    <h3 class="info-projetos">Proximo Projeto</h3>
-                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js
-                        e banco de dados...</p>
+                    <h3 class="info-projetos">Cadastro de Usuários (Back-end)</h3>
+                    <p class="paragrafo-projetos">API REST em Node.js para cadastrar, listar, editar e excluir usuários,
+                        com os dados salvos no MongoDB Atlas.</p>
                 </div>
 
                 <div class="card-buttons">
-                    <a href="#" target="_blank" class="btn-card">GitHub</a>
-                    <a href="#" target="_blank" class="btn-card">Demo</a>
-                </div>
-
-            </div>
-
-            <div class="projetos-card em-breve reveal">
-                <div class="projetos-img placeholder-img">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Em breve</span>
-                </div>
-
-                <div class="card-info">
-                    <h3 class="info-projetos">Proximo Projeto</h3>
-                    <p class="paragrafo-projetos">Em desenvolvimento. Em breve um projeto Full Stack utilizando Node.js
-                        e banco de dados...</p>
-                </div>
-
-                <div class="card-buttons">
-                    <a href="#" target="_blank" class="btn-card">GitHub</a>
-                    <a href="#" target="_blank" class="btn-card">Demo</a>
+                    <a href="https://github.com/AthillaDev/API-Nodes" target="_blank" class="btn-card">GitHub</a>
                 </div>
 
             </div>
@@ -314,19 +331,25 @@
     <section id="contatos" class="conteiner reveal">
 
         <h2 class="contatos-title">Entre em Contato</h2>
-        <form class="contatos-form" id="form" onsubmit="enviarWhattsApp(event)">
+        <form class="contatos-form" id="form">
 
             <div class="text-form">
                 <label for="name" class="sr-only">Nome</label>
-                <input class="contatos-text" placeholder="nome" id="name" required>
+                <input class="contatos-text" type="text" placeholder="Nome" id="name" name="nome" autocomplete="name" required>
+            </div>
+            <div class="text-form">
+                <label for="email" class="sr-only">E-mail</label>
+                <input class="contatos-text" type="email" placeholder="E-mail" id="email" name="email" autocomplete="email" required>
             </div>
             <div class="text-form">
                 <label for="message" class="sr-only">Mensagem</label>
-                <textarea class="contatos-text" placeholder="digite sua mensagem" rows="5" id="message"
+                <textarea class="contatos-text" placeholder="Digite sua mensagem" rows="5" id="message" name="mensagem"
                     required></textarea>
             </div>
 
-            <button class="contact-button" type="submit">Enviar via WhatsApp</button>
+            <button class="contact-button" type="submit">Enviar mensagem</button>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
 
         </form>
 
@@ -338,11 +361,11 @@
 
     <a href="https://wa.me/5521970431587" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
         aria-label="Fale comigo pelo WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </a>
 
     <button class="back-to-top" aria-label="Voltar ao topo">
-        <i class="fa-solid fa-chevron-up"></i>
+        <svg class="ico" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
     </button>
 
     <script src="./scripts.js"></script>

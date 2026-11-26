@@ -10,6 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Compensa a barra de navegação fixa ao navegar pelas âncoras */
+section[id],
+main[id] {
+    scroll-margin-top: 110px;
+}
+
 /* Variáveis CSS cores padrão*/
 :root {
     --primary: #10b981;              /* Verde principal (emerald) */
@@ -22,23 +28,13 @@ html {
     --glass-img: rgba(16, 185, 129, 0.22);
     --glass-sobre-content: rgba(255, 255, 255, 0.04);
     --glass-projetos-paragrafo: rgba(209, 213, 219, 0.85);
+    --btn-gradient: linear-gradient(45deg, #047857, #065f46);
 }
 
 /* Estilos de cores gerais do site*/
 body {
     background-color: var(--black);
     color: var(--light);
-}
-
-body.light {
-    --black: #f9fafb;
-    --blacker: #f3f4f6;
-    --light: #111827;
-    --glass: rgba(17, 24, 39, 0.07);
-    --glass-nav: rgba(249, 250, 251, 0.92);
-    --glass-img: rgba(16, 185, 129, 0.15);
-    --glass-sobre-content: rgba(17, 24, 39, 0.04);
-    --glass-projetos-paragrafo: rgba(55, 65, 81, 0.8);
 }
 
 /* Estilos da seção da barra de navegação- nav */
@@ -88,7 +84,7 @@ body.light {
 
 /* Estilos dos links da barra de navegação- menu - animação ao passar o mouse */
 .menu-link:hover {
-    background: rgba(79, 70, 229, .15);
+    background: rgba(16, 185, 129, .15);
     color: var(--primary);
 }
 
@@ -150,7 +146,7 @@ body.light {
 
 /* Estilos dos links das redes sociais da seção home-main */
 .social-links a{
-    color:white;
+    color:var(--light);
     text-decoration:none;
     transition:.3s ease;
 }
@@ -166,7 +162,7 @@ body.light {
     font-weight: 700;
     color: var(--primary);
     margin: 20px;
-    text-shadow: 0 0 15px rgba(79, 70, 229, .5);
+    text-shadow: 0 0 15px rgba(16, 185, 129, .5);
 }
 
 /* Estilos do p da seção home-main */
@@ -179,16 +175,16 @@ body.light {
 .btn-cv {
     text-decoration: none;
     color: white;
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--btn-gradient);
     padding: 1rem 2rem;
     border-radius: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
 }
 
 .btn-cv:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.55);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.55);
 }
 
 /* Estilos do h2 da seção sobre-main */
@@ -224,16 +220,6 @@ body.light {
 }
 
 /* Estilos da div da seção skills-main */
-.skills-grid {
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Estilos da div da seção skills-main */
 .skill-card {
     padding: 1.5rem;
     text-align: center;
@@ -247,7 +233,7 @@ body.light {
 .skill-card:hover {
     transform: translateY(-5px);
     box-shadow:
-        0 0 15px rgba(79, 70, 229, .4);
+        0 0 15px rgba(16, 185, 129, .4);
 }
 
 /* Estilos da seção projetos-main, seção sobre-main e para seção contatos-main */
@@ -281,13 +267,12 @@ body.light {
     border: 1px solid var(--glass);
     overflow: hidden;
     transition: all 0.4s ease;
-    cursor: pointer;
 }
 
 /* Estilos da div filha da seção projetos-main - animação ao passar o mouse */
 .projetos-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.25);
+    box-shadow: 0 12px 25px rgba(16, 185, 129, 0.25);
 }
 
 /* Estilos da imagem da seção projetos-main - animação ao passar o mouse */
@@ -333,9 +318,7 @@ body.light {
 .btn-card {
     text-decoration: none;
     color: white;
-    background: linear-gradient(45deg,
-            var(--primary),
-            var(--secondary));
+    background: var(--btn-gradient);
     padding: .6rem 1rem;
     border-radius: 8px;
     transition: .3s ease;
@@ -380,7 +363,6 @@ body.light {
     color: var(--light);
     font-size: 1.5rem;
     border: 1px solid var(--glass);
-    cursor: pointer;
     outline: none;
 }
 
@@ -393,7 +375,7 @@ body.light {
 /* Estilos do textarea da seção contatos-main */
 .contact-button {
     color: var(--light);
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--btn-gradient);
     padding: 1rem 2rem;
     border-radius: 8px;
     border: none;
@@ -451,8 +433,9 @@ body.light {
     gap: 0.5rem;
 }
 
-.placeholder-img i {
-    font-size: 3rem;
+.placeholder-img .ico {
+    width: 3rem;
+    height: 3rem;
     opacity: 0.5;
 }
 
@@ -499,7 +482,7 @@ body.light {
 .formacao-card:hover {
     transform: translateY(-6px);
     border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(79, 70, 229, 0.25);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.25);
 }
 
 .formacao-ano {
@@ -529,7 +512,6 @@ body.light {
     line-height: 1.5;
 }
 
-/* ========== Categorias de Tecnologias ========== */
 /* ========== Categorias de Tecnologias ========== */
 .skills-category {
     margin-bottom: 2.8rem;
@@ -572,7 +554,7 @@ body.light {
     font-weight: 700;
     color: var(--primary);
     margin: 20px;
-    text-shadow: 0 0 15px rgba(79, 70, 229, .5);
+    text-shadow: 0 0 15px rgba(16, 185, 129, .5);
     overflow: hidden;
     white-space: nowrap;
     border-right: 3px solid var(--primary);
@@ -775,6 +757,7 @@ body.light {
 
 .theme-toggle:hover {
     background: var(--primary);
+    color: #fff;
     transform: scale(1.1);
 }
 
@@ -833,7 +816,7 @@ body.light {
     transform: translateY(20px);
     transition: all .3s ease;
     z-index: 99;
-    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
 }
 
 .back-to-top.show {
@@ -844,7 +827,7 @@ body.light {
 
 .back-to-top:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
 }
 
 /* Animação de scroll reveal - versão aprimorada */
@@ -867,10 +850,32 @@ body.light {
 .projetos-card.reveal:nth-child(5) { transition-delay: 0.33s; }
 .projetos-card.reveal:nth-child(6) { transition-delay: 0.40s; }
 
+/* Ícones SVG inline */
+.ico {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+/* Botão de tema: mostra o sol no tema claro e a lua no escuro */
+.icon-sun {
+    display: none;
+}
+
+body.light .icon-sun {
+    display: inline-block;
+}
+
+body.light .icon-moon {
+    display: none;
+}
+
 /* Ícones nas skills */
-.skill-card i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+.skill-card .ico {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto 0.5rem;
     display: block;
     color: var(--primary);
 }
@@ -882,12 +887,14 @@ body.light {
     --light: #0f172a;
     --glass: rgba(15, 23, 42, 0.08);
     --glass-nav: rgba(248, 250, 252, 0.9);
-    --glass-img: rgba(79, 70, 229, 0.2);
+    --glass-img: rgba(16, 185, 129, 0.2);
     --glass-sobre-content: rgba(15, 23, 42, 0.05);
     --glass-projetos-paragrafo: rgba(15, 23, 42, 0.7);
+    --primary: #047857;
+    --secondary: #065f46;
 }
 
-body.light .skill-card i {
+body.light .skill-card .ico {
     color: var(--secondary);
 }
 
@@ -929,6 +936,36 @@ body.light .contact-button {
     }
 }
 
+/* Mensagem de status do formulário */
+.form-status {
+    min-height: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--light);
+    font-size: 1rem;
+}
+
+/* Acessibilidade: foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* Acessibilidade: reduz animações para quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* Melhorias extras de responsividade */
 @media (max-width: 767px) {
     .card-buttons {
@@ -964,5 +1001,19 @@ body.light .contact-button {
 
     .home-text {
         font-size: 0.95rem;
+    }
+}
+
+/* Reserva espaço para o botão de tema em telas estreitas e intermediárias, evitando sobreposição com o menu */
+@media (max-width: 980px) {
+    .navegacao {
+        padding-right: 5rem;
+    }
+}
+
+/* Tablets e telas intermediárias: menu mais compacto para caber ao lado do botão de tema */
+@media (min-width: 768px) and (max-width: 980px) {
+    .menu {
+        gap: 1.5rem;
     }
 }
