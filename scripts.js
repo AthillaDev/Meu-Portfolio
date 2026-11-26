@@ -1,35 +1,56 @@
-function enviarWhattsApp(event) {
+const contatoForm = document.getElementById("form");
+const formStatus = document.querySelector(".form-status");
+
+// Endereço do formulário no Formspree (mensagens são enviadas para o e-mail da conta)
+const FORM_ENDPOINT = "https://formspree.io/f/mgakqpdo";
+
+async function enviarContato(event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const message = document.getElementById("message").value.trim();
+    const nome = document.getElementById("name").value.trim();
+    const mensagem = document.getElementById("message").value.trim();
 
-    if (!name || !message) {
-        alert("Preencha todos os campos.");
+    if (!nome || !mensagem) {
+        formStatus.textContent = "Preencha todos os campos.";
         return;
     }
 
-    const telefone = "5521970431587";
-    const texto = `Olá, meu nome é ${name}. ${message}`;
-    const msgFormatada = encodeURIComponent(texto);
-    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+    if (FORM_ENDPOINT.includes("SEU_ID_AQUI")) {
+        formStatus.textContent = "Formulário ainda não configurado.";
+        return;
+    }
 
-    window.open(url, "_blank", "noopener,noreferrer");
+    formStatus.textContent = "Enviando...";
 
-    document.getElementById("form").reset();
+    try {
+        const resposta = await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(contatoForm)
+        });
+
+        if (resposta.ok) {
+            contatoForm.reset();
+            formStatus.textContent = "Mensagem enviada! Obrigado pelo contato.";
+        } else {
+            formStatus.textContent = "Não foi possível enviar. Tente novamente.";
+        }
+    } catch {
+        formStatus.textContent = "Erro de conexão. Tente novamente.";
+    }
 }
+
+contatoForm.addEventListener("submit", enviarContato);
 
 // Ano dinâmico no footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Dark/Light mode
 const themeToggle = document.querySelector(".theme-toggle");
-const themeIcon = themeToggle.querySelector("i");
 const body = document.body;
 
 function setTheme(theme) {
     body.classList.toggle("light", theme === "light");
-    themeIcon.className = theme === "light" ? "fa-solid fa-sun" : "fa-solid fa-moon";
     localStorage.setItem("theme", theme);
 }
 
@@ -75,7 +96,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
             });
         }
     });
-}, { threshold: 0.3 });
+}, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
 
 sections.forEach(section => sectionObserver.observe(section));
 
@@ -88,7 +109,7 @@ window.addEventListener("scroll", () => {
     } else {
         backToTop.classList.remove("show");
     }
-});
+}, { passive: true });
 
 backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

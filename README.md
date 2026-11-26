@@ -12,7 +12,7 @@ O objetivo é apresentar meus projetos, habilidades e trajetória como desenvolv
 - **HTML5** – Estrutura semântica
 - **CSS3** – Estilização moderna com variáveis CSS, Flexbox e Grid
 - **JavaScript** – Interatividade e funcionalidades dinâmicas
-- **Font Awesome** – Ícones
+- **SVG inline** – Ícones (Simple Icons e Font Awesome Free)
 - **Google Fonts (Poppins)** – Tipografia
 
 ---
@@ -26,7 +26,7 @@ O objetivo é apresentar meus projetos, habilidades e trajetória como desenvolv
 - Seção de tecnologias organizada por categorias
 - Seção de Formação & Cursos
 - Projetos com links para GitHub e Demo
-- Formulário de contato integrado com WhatsApp
+- Formulário de contato com envio por e-mail (Formspree)
 - Botão de voltar ao topo
 - Botão flutuante do WhatsApp
 
@@ -70,7 +70,7 @@ Sobre Mim → Resumo profissional
 Tecnologias → Front-end, Back-end e Ferramentas
 Formação & Cursos → Trajetória de aprendizado
 Projetos → Principais trabalhos desenvolvidos
-Contato → Formulário via WhatsApp
+Contato → Formulário com envio por e-mail
 
 ---
 
