@@ -3,7 +3,7 @@
 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro.  
 O objetivo é apresentar meus projetos, habilidades e trajetória como desenvolvedor Full Stack em formação.
 
-🔗 **Acesse o portfólio online:** [meu-portfolio-omega-seven.vercel.app](https://meu-portfolio-omega-seven.vercel.app/)
+🔗 **Acesse o portfólio online:** [meu-portfolio-athilla-dev.vercel.app](https://meu-portfolio-athilla-dev.vercel.app/)
 
 ---
 
@@ -76,7 +76,7 @@ Contato → Formulário com envio por e-mail
 
 ## 🔗 Links Importantes
 
-Portfólio online: meu-portfolio-omega-seven.vercel.app
+Portfólio online: meu-portfolio-athilla-dev.vercel.app
 GitHub: github.com/AthillaDev
 LinkedIn: linkedin.com/in/athillacruz
 
