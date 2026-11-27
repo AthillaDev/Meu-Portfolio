@@ -7,7 +7,7 @@ Arquivo de acompanhamento para retomar o trabalho de onde paramos. Atualizado em
 - HTML, CSS e JavaScript puro. Sem frameworks, e essa stack não deve mudar.
 - Fontes: Poppins (pesos 400, 500, 600 e 700).
 - Ícones: SVG inline. O Font Awesome foi removido.
-- Deploy: Vercel, em https://meu-portfolio-omega-seven.vercel.app
+- Deploy: Vercel, em https://meu-portfolio-athilla-dev.vercel.app
 - Arquivos principais: `index.html`, `style.css`, `scripts.js`, `README.md`.
 
 ## O que já foi feito
@@ -33,7 +33,7 @@ Arquivo de acompanhamento para retomar o trabalho de onde paramos. Atualizado em
 
 **Outros**
 - Conversor de Moedas removido do portfólio. Imagens apagadas.
-- Currículo em `Curriculo-Athilla.pdf` na raiz. Botão "Baixar Currículo" funcionando (confirmado).
+- Currículo em `Athilla-Cruz-CV.pdf` na raiz. Botão "Baixar Currículo" funcionando (confirmado).
 - Vídeos originais de 30 MB e 21 MB ainda estão em `img/` (`video-backend-banco.mp4`, `video-cadastro-usuarios.mp4`). Podem ser apagados.
 - Pasta `download/` vazia não pôde ser removida por falta de permissão. Apagar manualmente.
 
