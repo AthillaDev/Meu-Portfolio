@@ -43,7 +43,7 @@ Meu-Portifólio/
 │   ├── Foto-Profissicional.png
 │   ├── Foto-Profissicional.webp
 │   └── (imagens dos projetos)
-├── Curriculo-Athilla.pdf
+├── Athilla-Cruz-CV.pdf
 └── README.md
 ```
 

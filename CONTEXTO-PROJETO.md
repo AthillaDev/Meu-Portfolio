@@ -33,7 +33,7 @@ Arquivo de acompanhamento para retomar o trabalho de onde paramos. Atualizado em
 
 **Outros**
 - Conversor de Moedas removido do portfólio. Imagens apagadas.
-- Currículo em `Curriculo-Athilla.pdf` na raiz. Botão "Baixar Currículo" funcionando (confirmado).
+- Currículo em `Athilla-Cruz-CV.pdf` na raiz. Botão "Baixar Currículo" funcionando (confirmado).
 - Vídeos originais de 30 MB e 21 MB ainda estão em `img/` (`video-backend-banco.mp4`, `video-cadastro-usuarios.mp4`). Podem ser apagados.
 - Pasta `download/` vazia não pôde ser removida por falta de permissão. Apagar manualmente.
 
